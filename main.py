@@ -61,7 +61,7 @@ def main():
         deltaU = Uel - Uelref
         #############################  Changed code
 
-        deltareco_pixgrid = NL_main.NL_main(Uel, Uelref, Inj, categoryNbr, niter=70, output_dir_name=outputFolder)
+        deltareco_pixgrid = NL_main.NL_main(Uel, Uelref, Inj, categoryNbr, niter=50, output_dir_name=outputFolder)
 
         # save deltareco_pixgrid
         np.savez(outputFolder + '/' + str(objectno + 1) + '.npz', deltareco_pixgrid=deltareco_pixgrid) 
